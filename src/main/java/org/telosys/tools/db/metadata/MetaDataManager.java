@@ -38,14 +38,14 @@ import org.telosys.tools.db.observer.DatabaseObserverProvider;
  */
 public class MetaDataManager {
 	
-	private final TaskObserver2<Integer,String> observer ;
+	//private final TaskObserver2<Integer,String> observer ;
 	
     /**
      * Constructor
      */
     public MetaDataManager() {
 		super();
-		this.observer = DatabaseObserverProvider.getNewMetadataObserverInstance() ;
+	//	this.observer = DatabaseObserverProvider.getNewMetadataObserverInstance() ;
 	}
 
     /**
@@ -54,9 +54,9 @@ public class MetaDataManager {
      * @param message
      */
     private void notify(int level, String message) {
-    	if ( observer != null ) {
-        	observer.notify(level, message);
-    	}
+//    	if ( observer != null ) {
+//        	observer.notify(level, message);
+//    	}
     }
     
 	/**
